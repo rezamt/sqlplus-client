@@ -10,36 +10,26 @@ SQL*Plus Instant Client is a standalone product with all the functionality of SQ
 ### Linux Machines
 
 A) Instant Client Package - Basic: All files required to run OCI, OCCI, and JDBC-OCI applications 
-instantclient-basic-linux.64-xxxxxx.zip
+- instantclient-basic-linux.64-xxxxxx.zip
 
 B) Instant Client Package - SDK: Additional header files and an example makefile for developing Oracle applications with Instant Client
-instantclient-sdk-linux.64-xxxxxx.zip
+- instantclient-sdk-linux.64-xxxxxx.zip
 
 C) Instant Client Package - SQL*Plus: Additional libraries and executable for running SQL*Plus with Instant Client
-instantclient-sqlplus-linux.64-xxxxxx.zip
+- instantclient-sqlplus-linux.64-xxxxxx.zip
 
 ### MAC Machines
 
 A) Instant Client Package - Basic: All files required to run OCI, OCCI, and JDBC-OCI applications 
-instantclient-basic-macos.x64-xx.x.x.x.x.zip
+- instantclient-basic-macos.x64-xx.x.x.x.x.zip
 
 B) Instant Client Package - SDK: Additional header files and an example makefile for developing Oracle applications with Instant Client
-instantclient-sdk-macos.x64-xx.x.x.x.x.zip
+- instantclient-sdk-macos.x64-xx.x.x.x.x.zip
 
 C) Instant Client Package - SQL*Plus: Additional libraries and executable for running SQL*Plus with Instant Client
-instantclient-sqlplus-macos.x64-xx.x.x.x.x.zip
+- instantclient-sqlplus-macos.x64-xx.x.x.x.x.zip
 
-
-```bash
-Download
-http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
-
-
-instantclient-basic-linux.64-xxxxxx.zip
-instantclient-sdk-linux.64-xxxxxx.zip
-instantclient-sqlplus-linux.64-xxxxxx.zip
-
-```bash
+``` bash
 unzip instantclient-basic-linux.64-xxxxxx.zip
 unzip instantclient-sdk-linux.64-xxxxxx.zip
 unzip instantclient-sqlplus-linux.64-xxxxxx.zip
@@ -47,7 +37,7 @@ unzip instantclient-sqlplus-linux.64-xxxxxx.zip
 
 For liunx machine only, in your current directory:
 
-```bash
+``` bash
 cd instanceclient_12_1
 ln -s libclntsh.so.12.1 libclntsh.so
 ln -s libocci.so.12.1 libocci
@@ -60,8 +50,10 @@ For a quick run:
 export LD_LIBRARY_PATH=$(pwd)
 
 ./sqlplus hr/hr@localhost/pdboracle
-
 ```
+To maintain library path, updated the ZSH and BASH to keep
+
+``` bash
 Add LD_LIBRARY_PATH to your .zsh or .bashrc.
 
 vim ~/.zsh
@@ -69,3 +61,6 @@ vim ~/.zsh
 export LD_LIBRARY_PATH=PATH_TO_YOUR_SQLPLUS_ROOT
 
 ```
+
+### References
+- [INSTALL SQLPLUS](https://www.youtube.com/watch?v=Sz69kdItkPw)
