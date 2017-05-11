@@ -4,11 +4,10 @@ SQL*Plus Instant Client is a standalone product with all the functionality of SQ
 
 ## Installing SQL*Plus Instant Client from the UNIX or Windows Zip Files
 
-1- Download the zip files containing the SQL*Plus Instant Client package, and the OCI package from the OTN Instant Client page at 
-   http://www.oracle.com/technology/tech/oci/instantclient/instantclient.html. 
-
 ### Linux Machines
-
+Download the zip files containing the SQL*Plus Instant Client package, and the OCI package from the OTN Instant Client page at 
+- http://www.oracle.com/technology/tech/oci/instantclient/instantclient.html. 
+   
 A) Instant Client Package - Basic: All files required to run OCI, OCCI, and JDBC-OCI applications 
 - instantclient-basic-linux.64-xxxxxx.zip
 
@@ -33,7 +32,9 @@ ln -s libocci.so.12.1 libocci
 ```
 
 ### MAC Machines
-
+Download the zip files containing the SQL*Plus Instant Client package, and the OCI package from the OTN Instant Client page at 
+- http://www.oracle.com/technology/tech/oci/instantclient/instantclient.html. 
+   
 A) Instant Client Package - Basic: All files required to run OCI, OCCI, and JDBC-OCI applications 
 - instantclient-basic-macos.x64-xx.x.x.x.x.zip
 
@@ -69,4 +70,4 @@ export LD_LIBRARY_PATH=PATH_TO_YOUR_SQLPLUS_ROOT
 ```
 
 ### References
-- [INSTALL SQLPLUS](https://www.youtube.com/watch?v=Sz69kdItkPw)
+- [Installing SQLPLUS](https://www.youtube.com/watch?v=Sz69kdItkPw)
