@@ -18,6 +18,20 @@ B) Instant Client Package - SDK: Additional header files and an example makefile
 C) Instant Client Package - SQL*Plus: Additional libraries and executable for running SQL*Plus with Instant Client
 - instantclient-sqlplus-linux.64-xxxxxx.zip
 
+
+For liunx machine only, in your current directory:
+
+``` bash
+
+unzip instantclient-basic-linux.x64-xx.x.x.x.x.zip
+unzip instantclient-sdk-linux.x64-xx.x.x.x.x.zip
+unzip instantclient-sdk-linux.x64-xx.x.x.x.x.zip
+
+cd instanceclient_12_1
+ln -s libclntsh.so.12.1 libclntsh.so
+ln -s libocci.so.12.1 libocci
+```
+
 ### MAC Machines
 
 A) Instant Client Package - Basic: All files required to run OCI, OCCI, and JDBC-OCI applications 
@@ -30,20 +44,12 @@ C) Instant Client Package - SQL*Plus: Additional libraries and executable for ru
 - instantclient-sqlplus-macos.x64-xx.x.x.x.x.zip
 
 ``` bash
-unzip instantclient-basic-linux.64-xxxxxx.zip
-unzip instantclient-sdk-linux.64-xxxxxx.zip
-unzip instantclient-sqlplus-linux.64-xxxxxx.zip
+unzip instantclient-basic-macos.x64-xx.x.x.x.x.zip
+unzip instantclient-sdk-macos.x64-xx.x.x.x.x.zip
+unzip instantclient-sdk-macos.x64-xx.x.x.x.x.zip
 ```
 
-For liunx machine only, in your current directory:
-
-``` bash
-cd instanceclient_12_1
-ln -s libclntsh.so.12.1 libclntsh.so
-ln -s libocci.so.12.1 libocci
-```
-
-For a quick run:
+### Running SQLPlus
 
 ``` bash
 
