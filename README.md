@@ -55,7 +55,7 @@ ln -s libocci.so.12.1 libocci
 
 For a quick run:
 
-```bash
+``` bash
 
 export LD_LIBRARY_PATH=$(pwd)
 
